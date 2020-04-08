@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from cals import views as cals_views
+from learn import views as learn_views
 
 urlpatterns = [
-    path('',cals_views.index, name = "home"),
+    path('',learn_views.home, name = "home"),
     path('admin/', admin.site.urls),
     path('add/', cals_views.add, name = "add"),
-    path('add/<int:a>/<int:b>/',cals_views.add2,name="add2")
+    path('add/<int:a>/<int:b>/',cals_views.add2,name="add2"),
+
 ]
