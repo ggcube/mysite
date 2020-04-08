@@ -13,4 +13,7 @@ def add2(request,a,b):
     ans = str(a)+"+"+str(b)+"="+str(c)
     return HttpResponse(ans)
 
+def index(request):
+    return render(request,'home.html')
+
 # Create your views here.

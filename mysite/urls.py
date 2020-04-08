@@ -18,7 +18,8 @@ from django.urls import path
 from cals import views as cals_views
 
 urlpatterns = [
+    path('',cals_views.index, name = "home"),
     path('admin/', admin.site.urls),
     path('add/', cals_views.add, name = "add"),
-    path('add2/<int:a>/<int:b>/',cals_views.add2,name="add2")
+    path('add/<int:a>/<int:b>/',cals_views.add2,name="add2")
 ]
