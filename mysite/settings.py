@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cals',
     'learn',
+    'people',
 ]
 
 MIDDLEWARE = [
