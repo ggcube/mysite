@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'cals',
     'learn',
     'people',
+    'blog',
 ]
 
 MIDDLEWARE = [
